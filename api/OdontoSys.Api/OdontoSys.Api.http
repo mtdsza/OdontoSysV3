@@ -1,0 +1,6 @@
+@OdontoSys.Api_HostAddress = http://localhost:5063
+
+GET {{OdontoSys.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
