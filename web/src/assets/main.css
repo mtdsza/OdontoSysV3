@@ -1,0 +1,99 @@
+:root {
+  --bg-primary: #f4f6f8;
+  --bg-secondary: #ffffff;
+  --bg-sidebar: #2c3e50;
+  --text-primary: #2c3e50;
+  --text-secondary: #7f8c8d;
+  --text-sidebar: #ecf0f1;
+  --accent-color: #3498db;
+  --accent-hover: #2980b9;
+  --border-color: #dfe6e9;
+  --danger-color: #e74c3c;
+  --success-color: #27ae60;
+  --warning-color: #f39c12;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-sidebar: #0f0f0f;
+  --text-primary: #ecf0f1;
+  --text-secondary: #b2bec3;
+  --text-sidebar: #bdc3c7;
+  --accent-color: #3498db;
+  --accent-hover: #5dade2;
+  --border-color: #404040;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input, select, textarea {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-icon {
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .btn-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-icon.btn-edit:hover {
+  color: var(--accent-color);
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.btn-icon.btn-del:hover {
+  color: var(--danger-color);
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+.btn-icon.btn-check:hover, .btn-icon.btn-save:hover {
+  color: var(--success-color);
+  background-color: rgba(39, 174, 96, 0.1);
+}
+
+.btn-icon.btn-view:hover {
+  color: var(--warning-color);
+  background-color: rgba(243, 156, 18, 0.1);
+}
+
+.btn-primary i, 
+.btn-secondary i, 
+.btn-danger i, 
+.btn-save i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.bi {
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
