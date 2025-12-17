@@ -1,5 +1,7 @@
 # OdontoSysV3
 Projeto desenvolvido para as disciplinas de Desenvolvimento Web III e Engenharia de Software II
+### Grupo:
+Matheus, Hian, Roberto, Dudson
 
 ## Tecnologias utilizadas:
 ### Backend
@@ -29,8 +31,6 @@ docker compose up --build
 ## Acessando o sistema:
 ### Endereços:
 Front-End: http://localhost:5173
-
-Back-End: http://localhost:5000
 
 Doc da API: http://localhost:5000/swagger
 
